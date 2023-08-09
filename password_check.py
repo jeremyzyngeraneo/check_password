@@ -1,8 +1,3 @@
-"""
-password_check.py
-This script checks if a given password is in a list of worst passwords.
-"""
-
 
 # install module : pip install requests
 # import
