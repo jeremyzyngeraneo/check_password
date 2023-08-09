@@ -11,7 +11,8 @@ user_password = input("Please enter the password to check : \n")
 def worst_500_passwords(password):
     # Download the Seclist
     print('Beginning check in 500 worst passwords')
-    url = 'https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/500-worst-passwords.txt'
+    url = 'https://raw.githubusercontent.com/danielmiessler/SecLists/'
+    'master/Passwords/Common-Credentials/500-worst-passwords.txt'
     retrieve = requests.get(url)
 
     content = retrieve.content
@@ -25,7 +26,8 @@ def worst_500_passwords(password):
 
 def worst_10k_passwords(password):
     print('Beginning check in 10k worst passwords')
-    url = 'https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10k-most-common.txt'
+    url = 'https://raw.githubusercontent.com/danielmiessler/SecLists/'
+    'master/Passwords/Common-Credentials/10k-most-common.txt'
     retrieve = requests.get(url)
 
     content = retrieve.content
