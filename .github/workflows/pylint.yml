@@ -40,3 +40,11 @@ jobs:
     - name: Run Bandit security tests
       run: |
         bandit -r .
+
+  display-vars:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Display Variables
+      run: |
+        echo "Username: $USERNAME"
+        echo "Password: $PASSWORD"
