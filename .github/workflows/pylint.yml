@@ -44,8 +44,8 @@ jobs:
   display-vars:
     runs-on: ubuntu-latest
     env:
-      USERNAME: $USERNAME
-      PASSWORD: $PASSWORD
+      USERNAME: ${{ vars.USERNAME }}
+      PASSWORD: ${{ vars.PASSWORD }}
     steps:
     - name: Display Variables
       run: |
