@@ -12,7 +12,13 @@ user_password = input("Please enter the password to check : \n")
 
 
 def worst_500_passwords(password):
-    """ check if my password is in the 500 worst passwords
+    """
+    Vérifie si le mot de passe se trouve parmi les 500 pires mots de passe.
+
+    :param password: Le mot de passe de l'utilisateur à vérifier.
+    :type password: str
+    :return: Renvoie un message si le mot de passe figure parmi les 500 pires mots de passe.
+    :rtype: None
     """
     # Download the Seclist
     print('Beginning check in 500 worst passwords')
@@ -30,7 +36,13 @@ def worst_500_passwords(password):
 
 
 def worst_10k_passwords(password):
-    """ check if my password is in the 10k worst passwords
+    """
+    Vérifie si le mot de passe se trouve parmi les 10k pires mots de passe.
+
+    :param password: Le mot de passe de l'utilisateur à vérifier.
+    :type password: str
+    :return: Renvoie un message si le mot de passe figure parmi les 10k pires mots de passe.
+    :rtype: None
     """
     print('Beginning check in 10k worst passwords')
     url = 'https://raw.githubusercontent.com/danielmiessler/SecLists/'\
